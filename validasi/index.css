@@ -1,0 +1,228 @@
+@charset "utf-8";
+/* index.css */
+body {
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:12px;
+	background-color:#FFFFEA;
+	margin:0px;
+}
+::webkit-scrollbar {
+	width:10px;
+}
+::-webkit-scrollbar-track {
+	box-shadow:0 0 5px grey;
+	border-radius:10px;
+}
+::-webkit-scrollbar-thumb {
+	background:red;
+	border-radius:10px;
+}
+::-webkit-scrollbar-thumb:hover {
+	background:greenyellow;
+}
+
+#header, #header1, #header2 {
+	width:100%;
+	font-weight:bold;
+	position:fixed;
+	box-shadow:0px 8px 8px 0px rgba(100,100,100,0.3);
+}
+#kontenval {
+	height:500px;
+	position:relative;
+}
+.fixed_head {
+	border-collapse:collapse;
+}
+.fixed_head thead {
+	position:sticky;
+	position:-webkit-sticky;
+	top:0;
+	z-index:99;
+	color:#FFF;
+	background-color:#003;
+}
+.fixed_head thead th {
+	position:sticky;
+	border:1px solid white;
+	position:-webkit-sticky;
+	top:0;
+	z-index:99;
+	color:#FFF;
+	background-image:linear-gradient(#6666EA,darkblue);
+}
+#klos {
+	position:fixed;
+	top:1px;
+	right:1px;
+	border:2px solid red;
+	text-align:center;
+	font-weight:bold;
+	font-size:16px;
+	cursor:pointer;
+}
+#editor {
+	border:3px solid grey;
+	background:#FFF;
+	color:#333;
+	width:90%;
+	alignment-baseline:middle;
+	font-size:12px;
+	border-radius:5px;
+	margin:auto;
+	padding:10px;
+	overflow-x:auto;
+}
+
+.fixed_head td, .fixed_head th {
+/*
+	padding-left:5px;
+	padding-right:5px;
+*/
+}
+
+.fixed_head tbody tr:nth-child(even) { background-color: #DDD; }
+
+.fixed_head tbody tr:hover {
+	background:#FF0;
+}
+.btext {
+	border:1px solid grey;
+	font-weight:bold;
+	background:#FFF;
+	color:#333;
+	cursor:pointer;
+	border-radius:5px;
+}
+.btext:hover {
+	background:#CCC;
+}
+.nbutton:hover {
+	background:#0F0;
+	cursor:pointer;
+}
+
+
+
+::placeholder {
+	font-style:italic;
+    padding-left:5px;
+
+}
+#footer {
+	position:fixed;
+	bottom:0px;
+	background:#CCC;
+	width:100%;
+	z-index:99;
+}
+#footer2 {
+	font-style:italic;
+	font-weight:bold;
+	color:green;
+	text-align:right;
+	text-shadow:1px 2px gold;
+}
+.chjud {
+	text-align:center;
+	font-weight:bold;
+	background:#0CF;
+	color:white;
+	border-radius:5px 5px 0px 0px;
+	cursor:pointer;
+}
+#ch_isi {
+	border:1px solid #F9F;
+	padding:2px;
+	height:200px;
+	max-height:200px;
+}
+#chin {
+	border:1px solid #F9F;
+	border-top:0px;
+	padding:0px 2px 2px 2px;
+	background:greenyellow;
+}
+#chin_p {
+	font-size:11px;
+	min-width:198px;
+	max-width:198px;
+	min-height:30px;
+	max-height:30px;
+}
+#header {
+	background: rgb(170, 170, 255);
+	height:25px;
+	z-index:99;
+}
+#header1 {
+	background:#0FC;
+	height:25px;
+	border-bottom:1px solid #0FC;
+	z-index:88;
+}
+.judul {
+	font-size:14px;
+	padding:4px;
+	border:none;
+	text-align:center;
+	color:white;
+	text-shadow:0px 1px blue;
+}
+.dropbtn {
+/*
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+*/
+	background:#FFFFEA;
+	color:black;
+	cursor:pointer;
+	border:none;
+	padding:4px;
+}
+.dropbtn:hover {
+	background:blue;
+	color:yellow;
+}
+.dmenu {
+  position: relative;
+  display: inline-block;
+}
+.drop-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1EA;
+  min-width: 150px;
+  border-radius:0px 5px 5px 5px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.drop-content button {
+  color: black;
+  padding: 6px 8px;
+  text-decoration: none;
+  border-bottom:1px dotted blue;
+  border-radius:0px 5px 5px 5px;
+  display: block;
+}
+.mn1 {
+	background:#FFFFEA;
+	color:black;
+	cursor:pointer;
+	border:none;
+	padding:2px;
+	width:100%;
+}
+.mn1:hover {
+	background:yellow;
+}
+.dmenu:hover .drop-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dmenu:hover .dropbtn {background-color: #3e8e41;}
+#cetprint {
+	float:right;
+}
